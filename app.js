@@ -1,8 +1,8 @@
 (function () {
-    'use strict'
-    var express = require('express');
-    var app = express();
-    var port = 5000
+    'use strict';
+    var express = require('express'),
+         app = express(),
+         port = 5000;
     app.use(express.static('public'));
     app.use(express.static('src/views'));
     app.get('/', function (req, res) {
